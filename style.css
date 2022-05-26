@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Schoolbell', cursive, 'Abril Fatface', cursive;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1::before {
+  content: "MOBI";
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(9, 248, 21);
+  font-size: 89px;
+  display: block;
+}
+
+h2::before {
+  content: url(img/Novo.png);
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(9, 248, 21);
+  font-size: 89px;
+  display: block;
+}
+
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: rgb(9, 248, 21);
+  font-size: 28px; 
+  font-family: 'Schoolbell', cursive;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: rgb(9, 248, 21);
+  box-shadow: 0 0 0 3pxrgb(9, 248, 21);
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: rgb(9, 248, 21);
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: rgb(9, 248, 21);
+}
