@@ -108,3 +108,15 @@ h2::before {
   outline: none;
   background: rgb(9, 248, 21);
 }
+@media (max-width: 520px) {
+  img{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 300px) {
+  img{
+    width: 280px;
+    height: 280px;
+  }
+}
